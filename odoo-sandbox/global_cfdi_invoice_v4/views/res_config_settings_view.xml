@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_config_settings_cfdi_global" model="ir.ui.view">
+        <field name="name">res.config.settings.view.cfdi.global</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.view_res_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" string="Factura Global CFDI">
+                    <field name="product_id"/>
+                    <field name="tax_id"/>
+                    <field name="cfdi_usage"/>
+                    <field name="payment_method_id"/>
+                    <field name="payment_form"/>
+                    <field name="allow_different_currencies"/>
+                    <field name="allow_missing_rfc"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

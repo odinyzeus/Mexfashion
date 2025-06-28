@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Acción de servidor para confirmacion masiva de facturas -->    
+        <record id="action_mass_return_pickings_auto" model="ir.actions.server">
+            <field name="name">Devolver selección</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="binding_model_id" ref="stock.model_stock_picking"/>
+            <field name="binding_view_types">list</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = records.ReturnPicking()
+            </field>
+        </record>
+    </data>
+</odoo>
