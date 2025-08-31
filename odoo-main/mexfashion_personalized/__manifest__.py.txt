@@ -1,0 +1,30 @@
+{
+    'name': 'CEIVRYA Custom Business Personalizations',
+    'version': '1.0.0',
+    'summary': 'Customizations for sales, purchase, accounting, and invoicing workflows and views',
+    'description': """
+        This application implements tailored personalizations and enhancements 
+        covering sales, purchases, accounting, and invoicing modules, 
+        aiming to optimize business processes and improve user experience.
+    """,
+    'author': 'PhD. Eduardo Vargas B.',
+    'website': 'https://web.ceivrya.com',
+    'company': 'CEIVRYA SA de CV',
+    'category': 'Custom',
+    'depends': [
+        'sale_management',
+        'purchase',
+        'account',
+        'account_invoicing',
+        # Add other dependent custom modules here
+    ],
+    'data': [
+        # Place any security rules, common views or data files here if needed
+    ],
+    'images': [
+        'static/description/icon.png'
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'AGPL-3',
+}
